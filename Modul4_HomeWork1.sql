@@ -43,3 +43,6 @@ WHERE LOWER(full_name) LIKE '%иван%';
 
 SELECT AVG(salary) AS avg_salary, d.name FROM employee AS e JOIN department AS d ON e.department_id = d.id
 GROUP BY name
+
+DROP TABLE employee;
+DROP TABLE department;
